@@ -8,3 +8,5 @@ meteor-platform
 insecure
 iron:router
 sacha:spin
+accounts-ui
+accounts-password
