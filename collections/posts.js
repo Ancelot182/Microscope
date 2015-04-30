@@ -4,12 +4,10 @@
 
 Posts = new Meteor.Collection('posts');
 
-//Posts.allow({
-//    insert: function(userId, doc){
-//        // Allowing insertion just for logged user
-//        return !! userId;
-//    }
-//})
+Posts.allow({
+    update: ownsDocument,
+    remove: ownsDocument
+});
 
 Meteor.methods({
 
